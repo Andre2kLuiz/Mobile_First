@@ -108,18 +108,14 @@ main {
 #box1 {
     width: 200px;
     height: 220px;
-}
-
-#box2{
     background-color: #12b304;
-    width: 200px;
-    border-radius: 20px;
 }
 
 #box3{
     width: 200px;
     height: 220px;
     padding: 1rem;
+    background-color: #12b304;
 }
 
 .foot{
