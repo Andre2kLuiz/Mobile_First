@@ -21,6 +21,22 @@
       LuaCrescente.classList.add("hide")
       LuaCheia.classList.add("hide")
       LuaMinguante.classList.add("hide")
+      moonInfo.innerHTML = `Na fase da lua nova, é recomendável dar uma pausa<br>
+      nas atividades de plantio e colheita. Em vez disso, use<br>
+      este periodo para planejar e preparar seu jardim ou horta. Você<br>
+      pode planejar novos layouts, projetar novas áreas de<br>
+      cultivo e preparar o solo para futuras platações. É<br>
+      um momento de renovação e preparação para as<br>
+      próximas fases da lunares.<br><br>
+      A fase da lua nova é um momento de renovação e<br>
+      recomeço no ciclo lunar. Nesta fase, você pode se<br>
+      concentrar em preparar seu jardim ou horta para um <br>
+      novo ciclo de crescimento.<br><br>
+      <Strong>Lembre-se de que a influência da lua nas atividades de jardinagem é<br>
+      uma crença tradicional e não é apoiada por evidências sólidas.<br>
+      No entato, muitos jardineiros desfrutam de rituais relacionados á lua,<br>
+      pois isso os ajuda a se conectarem mais profundamente com suas <br>
+      plantas e jardins.</Strong><br>`
       
     } else if (fase < 0.5) {
       faseTexto = "Lua Crescente";
@@ -53,17 +69,32 @@
       Aproveite para colher os frutos do seu trabalho duro no jardim.<br><br>
       A fase da lua cheia é frequentemente associada a um período de alta<br>
       energia e atividade.<br><br>
-      Lembre-se de que a influência da lua nas atividades de jardinagem é<br>
+      <Strong>Lembre-se de que a influência da lua nas atividades de jardinagem é<br>
       uma crença tradicional e não é apoiada por evidências sólidas.<br>
       No entato, muitos jardineiros desfrutam de rituais relacionados á lua,<br>
       pois isso os ajuda a se conectarem mais profundamente com suas <br>
-      plantas e jardins.<br>`;
+      plantas e jardins.</Strong><br>`;
     } else {
       faseTexto = "Lua Minguante";
       luaNova.classList.add("hide");
       LuaCrescente.classList.add("hide")
       LuaCheia.classList.add("hide")
       LuaMinguante.classList.remove("hide")
+      moonInfo.innerHTML = `Durante a fase minguante da lua, concentre-se<br>
+      em tarefas de manutenção e cuidados com solo. É um<br>
+      momento adequado para fazer podas de limpeza,<br>
+      eliminar ervas daninhas e adubar o solo, Também é<br>
+      um bom momento para transplantar plantas, já que a<br>
+      lua minguante promove o desenvolvimento da raízes.<br><br>
+      Durante a fase da lua minguante, a energia da lua<br>
+      está diminuindo, o que pode ser aproveitado para<br>
+      realizar atividades de limpeza, manuenção e<br>
+      preparação para o próximo ciclo de crescimento.<br><br>
+      Lembre-se de que a influência da lua nas atividades de jardinagem é<br>
+      uma crença tradicional e não é apoiada por evidências sólidas.<br>
+      No entato, muitos jardineiros desfrutam de rituais relacionados á lua,<br>
+      pois isso os ajuda a se conectarem mais profundamente com suas <br>
+      plantas e jardins.<br>`
     }
 
     // Exibindo a fase da lua na div
