@@ -1,3 +1,8 @@
+ 
+ const luaNova = document.querySelector("#LuaNova");
+ const LuaCrescente = document.querySelector("#LuaCrescente")
+ const LuaCheia = document.querySelector("#LuaCheia")
+ const LuaMinguante = document.querySelector("#LuaMinguante")
  // Função para calcular a fase da lua com base no ciclo lunar
  function calcularFaseLua() {
     const agora = new Date();
@@ -11,12 +16,28 @@
 
     if (fase < 0.03) {
       faseTexto = "Lua Nova";
+      luaNova.classList.remove("hide");
+      LuaCrescente.classList.add("hide")
+      LuaCheia.classList.add("hide")
+      LuaMinguante.classList.add("hide")
     } else if (fase < 0.5) {
       faseTexto = "Lua Crescente";
+      luaNova.classList.add("hide");
+      LuaCrescente.classList.remove("hide")
+      LuaCheia.classList.add("hide")
+      LuaMinguante.classList.add("hide")
     } else if (fase < 0.97) {
       faseTexto = "Lua Cheia";
+      luaNova.classList.add("hide");
+      LuaCrescente.classList.add("hide")
+      LuaCheia.classList.remove("hide")
+      LuaMinguante.classList.add("hide")
     } else {
       faseTexto = "Lua Minguante";
+      luaNova.classList.add("hide");
+      LuaCrescente.classList.add("hide")
+      LuaCheia.classList.add("hide")
+      LuaMinguante.classList.remove("hide")
     }
 
     // Exibindo a fase da lua na div
