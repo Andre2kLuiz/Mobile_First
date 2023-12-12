@@ -65,8 +65,9 @@ a:hover {
 }
 
 .putIa section textarea {
-    width: 300px;
-    height: 300px;
+   display: flexbox;
+   width: 300px;
+   height: 300px;
 }
 
 main {
