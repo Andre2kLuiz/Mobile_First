@@ -1,3 +1,5 @@
+//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
+
 const inputQuestion = document.getElementById("inputQuestion");
 const result = document.getElementById("result");
 
@@ -5,7 +7,8 @@ inputQuestion.addEventListener("keypress", (e) => {
   if (inputQuestion.value && e.key === "Enter") SendQuestion();
 });
 
-const OPENAI_API_KEY = "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";
+//const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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"
 
 function SendQuestion() {
   var sQuestion = inputQuestion.value;
