@@ -14,10 +14,6 @@ html {
     background: linear-gradient(#fff, #a9a8a8);
     background-repeat: no-repeat;
     overflow: hidden;
-    display: flexbox;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header{
@@ -30,6 +26,7 @@ header{
     width: 100vw;
     height: 65px;
     padding: .8rem;
+   
 }
 
 a {
@@ -44,39 +41,23 @@ a:hover {
     opacity: 1;
 }
 
-#flor {
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-
-#flor img{
-    width: 200px;
-    height: 200px;
-    
-}
-
-.iputIa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.putIa section textarea {
-   display: flexbox;
-}
-
 main {
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    border: 1px solid rgba(0, 0, 0, 0.248);
+    margin: 40px;
+}
+
+.container {
+    margin: 50px;
+}
+
+main .container iframe{
+    width: 40rem;
+    height: 30rem;
 }
 
 .foot{
@@ -94,4 +75,7 @@ main {
     bottom: 0;
 }
 
+.hide {
+    display: none;
+}
 
