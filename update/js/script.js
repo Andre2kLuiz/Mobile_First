@@ -314,7 +314,7 @@ btnApagar.addEventListener("click", () => {
           console.log("Usuario removido com sucesso.");
           alert("Usuario removido com Sucesso.");
           document.getElementById("popup").style.display = "none";
-          window.location.href = "/Home/indexHome.html";
+          window.location.href = "/login/indexLogin.html";
         } else {
           alert("Senha Incorreta");
           document.getElementById("popup").style.display = "none";

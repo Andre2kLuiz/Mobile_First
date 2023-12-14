@@ -8,7 +8,7 @@ inputQuestion.addEventListener("keypress", (e) => {
 });
 
 //const OPENAI_API_KEY = "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";
-const OPENAI_API_KEY = "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"
+const OPENAI_API_KEY = "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"
 
 function SendQuestion() {
   var sQuestion = inputQuestion.value;
